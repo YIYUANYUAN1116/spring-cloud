@@ -1,0 +1,10 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: service02
+
+  cloud:
+    nacos:
+      server-addr: 192.168.213.134:8848
