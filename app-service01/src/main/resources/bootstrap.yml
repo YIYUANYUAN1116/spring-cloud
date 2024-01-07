@@ -2,7 +2,10 @@ spring:
   cloud:
     nacos:
       server-addr: 192.168.213.134:8848
-
+      config:
+        file-extension: yaml
   application:
     name: service01
+  profiles:
+    active: dev
 

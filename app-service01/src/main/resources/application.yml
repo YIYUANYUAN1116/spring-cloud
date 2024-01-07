@@ -2,3 +2,19 @@ server:
   port: 9001
 
 
+spring:
+  cloud:
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: 192.168.213.134:8858
+
+logging:
+  level:
+    com.alibaba.nacos: error
+
+
+user:
+  service: service01
+
+

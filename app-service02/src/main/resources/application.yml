@@ -2,9 +2,12 @@ server:
   port: 9002
 
 spring:
-  application:
-    name: service02
-
   cloud:
-    nacos:
-      server-addr: 192.168.213.134:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: 192.168.213.134:8858
+
+logging:
+  level:
+    com.alibaba.nacos: error
